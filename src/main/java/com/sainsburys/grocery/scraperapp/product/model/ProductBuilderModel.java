@@ -13,6 +13,14 @@ public class ProductBuilderModel {
         this.productNameLink = productNameLink;
     }
 
+    public String getProductNameLink() {
+        return productNameLink;
+    }
+
+    public void setProductNameLink(String productNameLink) {
+        this.productNameLink = productNameLink;
+    }
+
     public ProductBuilderModel setItemCode(Integer itemCode) {
         this.itemCode = itemCode;
         return this;

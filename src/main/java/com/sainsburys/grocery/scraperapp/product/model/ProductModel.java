@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.util.Optional;
+
 public class ProductModel {
 
     @JsonIgnore
@@ -56,7 +58,8 @@ public class ProductModel {
     }
 
     public Double getUnitPrice() {
-        return Double.parseDouble(String.format("%.2f", unitPrice));
+        return Optional.ofNullable(unitPrice)
+                .map(aDouble -> Double.parseDouble(String.format("%.2f", aDouble))).orElse(0.00);
     }
 
     public void setUnitPrice(Double unitPrice) {
@@ -80,7 +83,7 @@ public class ProductModel {
     }
 
     public double getVat() {
-        return Double.parseDouble(String.format("%.2f", this.unitPrice*0.2));
+        return Double.parseDouble(String.format("%.2f", getUnitPrice() * 0.2));
     }
 
 }
