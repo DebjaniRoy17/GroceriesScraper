@@ -1,4 +1,4 @@
-package com.sainsburys.grocery.scraperApp;
+package com.sainsburys.grocery.scraperapp;
 
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;

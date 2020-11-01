@@ -1,4 +1,4 @@
-package com.sainsburys.grocery.scraperApp.product.model;
+package com.sainsburys.grocery.scraperapp.product.model;
 
 public class ProductBuilderModel {
 

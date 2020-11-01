@@ -1,4 +1,4 @@
-package com.sainsburys.grocery.scraperApp.product.model;
+package com.sainsburys.grocery.scraperapp.product.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;

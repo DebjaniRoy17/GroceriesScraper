@@ -1,4 +1,4 @@
-package com.sainsburys.grocery.scraperApp;
+package com.sainsburys.grocery.scraperapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,6 +8,7 @@ public class ScraperAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ScraperAppApplication.class, args);
-	}
+
+    }
 
 }
